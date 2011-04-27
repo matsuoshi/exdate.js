@@ -1,0 +1,5 @@
+javascript の Date() に、phpっぽい format() メソッドを追加
+
+例：
+	var d = new Date();
+	d.format('%Y/%m/%d %H:%i:%s');	// 2011/04/27 13:06:00
