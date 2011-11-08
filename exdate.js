@@ -8,9 +8,9 @@ Date.prototype.format = function(str)
 		// day
 		'%d' : (this.getDate() < 10) ? '0' + this.getDate() : this.getDate(),
 		'%j' : this.getDate(),
+		'%S' : (['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th'])[this.getDate() % 10],
 		'%D' : (['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'])[this.getDay()],
 		'%l' : (['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'])[this.getDay()],
-		'%S' : (['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th'])[this.getDay() % 10],
 		'%w' : this.getDay(),
 		'%W' : (['日', '月', '火', '水', '木', '金', '土'])[this.getDay()],
 		
